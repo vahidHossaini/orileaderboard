@@ -3,21 +3,55 @@ module.exports = class leaderboardBootstrap{
   {
     this.funcs=[
       {
-          name:'sampleFunction',
-          title:'this is sample' ,
+          name:'getTopTen', 
           inputs:[
 			{
-				name:'user',
-				type:'UserInterface',
+				name:'gameId',
+				type:'string',
 				nullable:false
 			}
           ]
+      }, 
+      {
+          name:'getBoard', 
+          inputs:[
+			{
+				name:'gameId',
+				type:'string',
+				nullable:false
+			},
+			{
+				name:'userid',
+				type:'string',
+				nullable:false
+			},
+          ]
+      }, 
+      {
+          name:'setScore',  
+      }, 
+      {
+          name:'getScore',  
+      }, 
+      {
+          name:'addScore',  
+      }, 
+      {
+          name:'updateUser',  
       }, 
 	  
 	  
 	   
     ]
-    this.auth=[ 
+    this.auth=[  
+            {
+                role: 'login',
+                name: 'getTopTen'
+            },
+            {
+                role: 'login',
+                name: 'getBoard'
+            },
         ]
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "orileaderboard",
-  "version": "0.0.1",
+  "version": "0.0.6",
   "description": "origamicore  leaderboard",
   "main": "index.js",
   "scripts": {

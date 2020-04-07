@@ -6,7 +6,7 @@ module.exports = class leaderboardConfig
     }
     getPackages()
     {
-       return []
+       return [{name:'redis'}]
     }
     getMessage()
 	{
