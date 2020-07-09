@@ -32,7 +32,7 @@ class leaderboardManager
     updateUser(id,data,func)
 	{  
         try{
-            return this.disc.run('leaderboard','addScore',{id,data},func)
+            return this.disc.run('leaderboard','updateUser',{id,data},func)
             
         }catch(exp){console.log(exp)}
 	}
